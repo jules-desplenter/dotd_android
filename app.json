@@ -1,0 +1,50 @@
+{
+    "expo": {
+        "name": "dotd_final",
+        "slug": "dotd_final",
+        "version": "1.0.8",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#002849"
+        },
+        "plugins": [
+            "react-native-nfc-manager"
+        ],
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true,
+            "infoPlist": {
+                "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you share them in your profile.",
+                "NSCameraUsageDescription": "Allow Dotd to access your camera",
+                "NSMicrophoneUsageDescription": "Allow Dotd to access your microphone",
+                "NFCReaderUsageDescription": "Allow Dotd acces to your NFC for reading your Dotd card."
+            },
+            "bundleIdentifier": "dotdiosfinal"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#FFFFFF"
+            },
+            "permissions": [
+                "android.permission.CAMERA",
+                "android.permission.READ_EXTERNAL_STORAGE",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.RECORD_AUDIO",
+                "android.permission.NFC"
+            ],
+            "package": "com.julesdesplenter12345.dotd_final"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        }
+    }
+}
